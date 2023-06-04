@@ -1,0 +1,84 @@
+#myImg,
+#myImg2,
+#myImg3,
+#myImg4,
+#myImg5,
+#myImg6 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#myImg:hover,
+#myImg2:hover,
+#myImg3:hover,
+#myImg4:hover,
+#myImg5:hover,
+#myImg6:hover {
+    opacity: 0.5;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden par defaut */
+    position: fixed;
+
+    z-index: 1;
+
+
+
+    left: 10%;
+    top: 25%;
+
+
+    width: 80%;
+
+    height: 80%;
+
+    overflow: auto;
+
+
+}
+
+/* Modal image */
+.modal-content {
+
+    display: block;
+    width: 100%;
+    padding: 25px;
+}
+
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* button fermer*/
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
