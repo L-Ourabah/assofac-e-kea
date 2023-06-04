@@ -35,9 +35,11 @@ h5,
 h6 {
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     background-color: var(--couleur-principale);
 }
+
 header {
     background: var(--couleur-principale);
     height: 100%;
@@ -90,7 +92,7 @@ footer p {
 
 .owl-carousel {
     width: 100%;
-    height: 265px;
+    height: 60vh;
     overflow: hidden;
     /*contenu depassant sera caché*/
 
@@ -99,10 +101,10 @@ footer p {
 
 .slide {
     width: 100%;
-    height: 450px;
+    height: 60vh;
     position: relative;
-    /*background-position: center;*/
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
 
@@ -116,6 +118,9 @@ footer p {
     left: 0;
     width: 100%;
     /* height: 450px;*/
+    width: 100%;
+    height: 60vh;
+
 
 }
 
@@ -155,7 +160,7 @@ footer p {
 }
 
 .titre-inspiration h1 {
-    
+
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
@@ -169,7 +174,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     width: 100%;
     gap: 11%;
 }
@@ -207,9 +212,9 @@ footer p {
 .produits img:hover {
     -ms-transform: scale(1.5);
     /* IE 9 */
-    /*-webkit-transform: scale(1.5);*/
-    /* Safari 3-8 */
-    /*1transform: scale(1.5) translateX(50%) translateY(50%);
+/*-webkit-transform: scale(1.5);*/
+/* Safari 3-8 */
+/*1transform: scale(1.5) translateX(50%) translateY(50%);
     
 
     border: 1px solid white;
@@ -231,3 +236,56 @@ footer p {
     color: var(--couleur-police);
 }
 
+
+
+@media (min-width: 500px) {
+
+    .produits img {
+
+        width: 190px;
+        height: 140px;
+
+    }
+}
+@media (min-width: 650px) {
+
+    .produits img {
+
+        width: 250px;
+        height: 160px;
+
+    }
+}
+
+@media (min-width: 900px) {
+
+    .produits img {
+
+        width: 273px;
+        height: 165px;
+
+    }
+}
+
+@media (min-width: 1045px) {
+
+    .produits img {
+
+        width: 373px;
+        height: 187px;
+
+    }
+
+
+    #footer {
+        position: relative;
+    }
+
+    #footer-contact {
+        position: absolute;
+        right: 5%;
+    }
+
+
+
+}
