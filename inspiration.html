@@ -23,7 +23,7 @@
     <!-- lien css-->
 
     <link type="text/css" rel="stylesheet" href="inspiration.css" />
-
+    <link type="text/css" rel="stylesheet" href="zoom.css" />
 
     <title>inspiration</title>
 </head>
@@ -75,60 +75,69 @@
 
         <section>
             <div class="produits">
-                <div class="produit1">
-                    <div>
-                        <img src="img/chambre zen.jpeg" alt="zen">
+                <div class="produit1 ">
+                    <div class="produit-individuel">
+                        <img id="myImg" src="img/chambre zen.jpeg" alt="zen">
                     </div>
                     <div>
                         <p>Chambre Zen</p>
                     </div>
                 </div>
 
-                <div class="produit2">
-                    <div>
-                        <img src="img/salon detente.jpeg" alt="detente">
+                <div class="produit2 ">
+                    <div class="produit-individuel">
+                        <img id="myImg2" src="img/salon detente.jpeg" alt="detente">
                     </div>
                     <div>
                         <p>Salon Détente</p>
                     </div>
                 </div>
 
-                <div class="produit3">
-                    <div>
-                        <img src="img/cusine moderne.jpg" alt="moderne">
+                <div class="produit3  ">
+                    <div class="produit-individuel">
+                        <img id="myImg3" src="img/cusine moderne.jpg" alt="moderne">
                     </div>
                     <div>
                         <p>Cusine Moderne</p>
                     </div>
                 </div>
 
-                <div class="produit4">
-                    <div>
-                        <img src="img/salon boheme.jpeg" alt="boheme">
+                <div class="produit4  ">
+                    <div class="produit-individuel">
+                        <img id="myImg4" src="img/salon boheme.jpeg" alt="boheme">
                     </div>
                     <div>
                         <p>Salon Bohéme</p>
                     </div>
                 </div>
 
-                <div class="produit5">
-                    <div>
-                        <img src="img/chambre urbaine.jpeg" alt="urbaine">
+                <div class="produit5 ">
+                    <div class="produit-individuel">
+                        <img id="myImg5" src="img/chambre urbaine.jpeg" alt="urbaine">
                     </div>
                     <div>
                         <p>Chambre Urbaine</p>
                     </div>
                 </div>
 
-                <div class="produit6">
-                    <div>
-                        <img src="img/salon urbaine.jpeg" alt="salon urbain">
+                <div class="produit6 ">
+                    <div class="produit-individuel">
+                        <img id="myImg6" src="img/salon urbaine.jpeg" alt="salon urbain">
                     </div>
                     <div>
                         <p>Salon Urbain</p>
                     </div>
                 </div>
             </div>
+            <div id="myModal" class="modal">
+
+                <!--  Button -->
+                <span class="close">&times;</span>
+              
+                <!-- Modal  (The Image) -->
+                <img class="modal-content" id="img01">
+                
+              </div>
         </section>
 
 
@@ -166,8 +175,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- lien de mon js -->
-
 <script src="inspiration.js"></script>
+<script src="zoom.js"></script>
+
 
 
 </html>
