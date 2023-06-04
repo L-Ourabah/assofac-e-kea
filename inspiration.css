@@ -1,0 +1,222 @@
+:root {
+    --couleur-principale: #0500af;
+    --couleur-secondaire: #ffef00;
+    --bleu-secondaire: #030068;
+    --bleu-tertiaire: #020037;
+    --couleur-police: rgb(237, 233, 227);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    background-color: var(--couleur-principale);
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'inter', sans-serif;
+}
+
+/************************nav*****************************************/
+
+
+
+
+header {
+    background: var(--couleur-principale);
+    height: 100%;
+}
+
+header,
+section {
+    color: var(--couleur-police);
+}
+
+#logo-container {
+    width: 100px;
+}
+
+#logo-container img {
+    width: 100%;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+
+
+
+/****************************************************************carousel*************************************/
+
+.owl-carousel {
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+    /*contenu depassant sera caché*/
+
+
+}
+
+.slide {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    /*background-position: center;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 450px;*/
+
+}
+
+.slide-1 {
+    background-image: url(img/canapé.png);
+
+}
+
+.slide-2 {
+    background-image: url(img/surface-1.jpeg);
+
+}
+
+.slide-3 {
+    background-image: url(img/header_produit.jpeg);
+
+}
+
+
+
+
+
+
+
+/*****************************************************************fin caroussel*************************************************************************/
+
+
+
+
+/*******************************************************titre nos inspiration**************************************/
+
+.titre-inspiration {
+    text-align: center;
+    padding: 5%;
+
+
+}
+
+.titre-inspiration h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: var(--couleur-police);
+}
+
+/*********************************************nos produits***************************************/
+
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 15%;
+    width: 100%;
+    gap: 11%;
+}
+
+.produit1,
+.produit2,
+.produit3,
+.produit4,
+.produit5,
+.produit6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.produits img {
+
+    width: 146px;
+    height: 133px;
+    max-width: auto;
+    max-height: auto;
+
+    /*width:100%;*/
+}
+/**************************zoom image*****************************************/
+
+
+.produits img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+    
+    
+    border: 1px solid white;
+    border-radius: 25px;
+ 
+    
+    width:300px;
+    height:300px;
+   
+
+}
+
+
+
+.produits p {
+    text-align: center;
+    padding: 4% 0 4% 0;
+    
+    margin: 4% 0 4% 0;
+    color: var(--couleur-police);
+}
+
+/***************************************************footer*******************************************/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--couleur-police);
+    background-color: #02001e;
+}
+
+footer p {
+    margin-bottom: .5em;
+}
+
+#footer-title {
+    font-size: 3em;
+}
