@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- lien carroussel -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- lien css-->
+
+    <link type="text/css" rel="stylesheet" href="services.css" />
+
+
+    <title>inspiration</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-nav">
+            <div id="burger-menu">
+                <img src="img/menu.svg" alt="Menu Burger">
+            </div>
+            <a href="#">
+                <div id="logo-container">
+                    <img src="img/logo-ekea.png" alt="logo-ekea">
+                </div>
+            </a>
+            <div>
+                <a href="#"><img src="img/panier.svg" alt="panier"></a>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <section>
+
+            <!--carroussel-->
+
+            <div class="owl-carousel owl-theme">
+                <div class="slide slide-1">
+
+
+                </div>
+                <div class="slide slide-2">
+
+                </div>
+               
+            </div>
+
+
+        </section>
+
+        <div class="titre-service">
+            <h1>Nos services</h1>
+        </div>
+
+
+        <section class="option">
+
+
+
+            <div id="nos-services" class="Mode">
+
+                <div class="button-mode">
+
+                    <div>
+                        <button class="nw2-bar-item w2-button " onclick="openMode('nos-services')">Nos
+                            services de livraison
+                        </button>
+                    </div>
+
+                    <div>
+                        <button class="w2-bar-item w2-button " onclick="openMode('nos-modes' )">Nos
+                            modes de paiement
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="livraison">
+
+                    <div>
+                        <h3>Petits colis:</h3>
+                        <p>
+                            Chronopost (articles de moins de 12,5kg)9.90 €
+                        </p>
+                        <h3>Livraison domicile par transporteur :</h3>
+                        <p>
+                            9€ pour un achat inférieur à 400€
+                        </p>
+                        <p>
+                            59€ pour un achat​​ supérieur à 400€ et inférieur à 1000€
+                        </p>
+                        <p>
+                            109€ pour un achat supérieur à 1000€
+                        </p>
+                    </div>
+
+                    <div class="picture">
+
+                        <img src="img/img-services.jpeg ">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div id="nos-modes" class="Mode" style="display:none">
+
+                <div class="button-mode">
+
+                    <div>
+
+                        <button class="w2-bar-item w2-button " onclick="openMode('nos-services' )">Nos
+                            services de livraison
+                        </button>
+
+                    </div>
+
+                    <div>
+
+                        <button class="nw2-bar-item w2-button " onclick="openMode('nos-modes' )">Nos
+                            modes de paiement
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="paiement">
+
+                    <div class="pay">
+
+                        <div class="titreh31">
+
+                            <h3> Paiement par carte bancaire </h3>
+
+                        </div>
+
+                        <div class="carte">
+
+                            <img src="img/🦆 icon _credit card_.svg">
+
+                            <img src="img/🦆 icon _credit card_2.svg">
+
+                            <img src="img/🦆 icon _credit card thin_.svg">
+
+                        </div>
+
+                        <div class="titreh32">
+
+                            <h3> Paiment par PayPal</h3>
+
+                        </div>
+
+                        <div class="paypal">
+
+                        
+                         <img src="img/🦆 icon _paypal thin_.svg">
+                            
+
+                        </div>
+
+                        <div class="titreh33" >
+                            <h3> Paiement 4x sans frais </h3>
+
+                        </div>
+                        <div>
+                            <div class="fois">
+                                <p>4x fois sans frais par cb</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="picture">
+                        <img src="img/carte bleu.jpg" alt="carte bleu">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <div>
+            <p id="footer-title">e.kea</p>
+        </div>
+
+        <div>
+            <p>Nous Contacter</p>
+        </div>
+
+    </footer>
+    </div>
+
+
+</body>
+
+
+<!-- script jquery -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- owl carousel -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- lien de mon js -->
+
+<script src="inspiration.js"></script>
