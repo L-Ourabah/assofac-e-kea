@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kea - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="accueil" onload="demarrage()">
+    <div id="loader-fullscreen">
+        <!--<p id="loader-titre">e.kea</p>-->
+        <img id="logo-shrink" src="images/logo-ekea.PNG" alt="Logo E-kea">
+        <div id="loader-conteneur">
+            <div id="loader"></div>
+        </div>
+        <p id="loader-redirection">Vous allez être redirigés à la page d'accueil...</p>
+    </div>
+    <div id="conteneur-chargement">
+        <header>
+            <div id="header-nav">
+                <div id="burger-menu">
+                    <div class="barre"></div>
+                    <div class="barre"></div>
+                    <div class="barre"></div>
+                </div>
+
+                <a href="index.html">
+                    <div id="logo-container">
+                        <img id="logo-shrink" src="images/logo-ekea.png" alt="Logo E-kea">
+                    </div>
+                </a>
+                <div>
+                    <a href="panier.html"><img src="images/panier.svg" alt="panier"></a>
+
+                </div>
+                <div id="burger-menu-nav">
+                    <div id="burger-menu-nav-flex">
+                        <div id="image-burger-menu-open">
+                            <img src="images/logo-ekea.PNG" alt="Logo E-kea">
+                        </div>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Inspiration</a></li>
+                            <li><a href="#">Produits</a></li>
+                            <li><a href="#">Nos Services</a></li>
+                            <li><a href="#">Nous Contacter</a></li>
+                        </ul>
+                        <div id="burger-reseaux-sociaux">
+                            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                        </div>
+                        <div id="copyright">
+                            <p>Copyright - Jade & Stella</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <div class="owl-carousel owl-theme">
+                <div class="slide slide-1">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+            </div>
+            <div id="promotion">
+                <div id="promotion-sliding">
+                    <p>-20% sur tous les produits dès 99€ d'achat</p>
+                    <p>-35% sur les décorations</p>
+                    <p>-50% avec le code jadelia</p>
+                </div>
+            </div>
+            <section id="section-bienvenue">
+                <div id="section-bienvenue-conteneur">
+                    <h2>Bienvenue !</h2>
+                    <p>Bienvenue dans notre univers de meubles et décoration ! Explorez des inspirations pour créer
+                        votre espace idéal. Découvrez des pièces uniques et de qualité pour embellir votre intérieur.
+                    </p>
+                </div>
+            </section>
+            <div id="main-flex">
+                <section id="section-inspirations">
+                    <h2>Nos inspirations</h2>
+                    <p>Découvrez nos inspirations</p>
+                    <a href="#">Voir plus</a>
+                </section>
+                <div class="hidden" id="image-inspirations"><img src="images/image-inspiration.png"
+                        alt="Image partie inspiration"></div>
+                <div class="hidden" id="image-services"><img src="images/image-services.png"
+                        alt="Image partie services"></div>
+                <section id="section-services">
+                    <h2>Nos services</h2>
+                    <p>Découvrez nos services de livraison</p>
+                    <a href="#">Voir plus</a>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p id="footer-title">e.kea</p>
+            </div>
+            <div id="footer-contact">
+                <a href="">
+                    <p>Nous Contacter</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
