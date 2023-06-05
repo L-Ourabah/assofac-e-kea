@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="produit.css">
+    <title>E-Kea - Produits</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-nav">
+            <div id="burger-menu">
+                <img src="images/menu.svg" alt="Menu Burger">
+            </div>
+            <a href="index.html">
+                <div id="logo-container">
+                    <img src="images/logo-ekea.png" alt="">
+                </div>
+            </a>
+            <div>
+                <a href="panier.html"><img src="images/panier.svg" alt="panier"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="header-produit">
+
+        </div>
+
+        <div id="title-produits">
+
+            <h1> Nos Produits </h1>
+
+        </div>
+
+        <body>
+            <div class="filter-bar">
+                <label for="category-filter">Catégorie :</label>
+                <select id="category-filter">
+                    <option value="">Toutes les catégories</option>
+                    <option value="surface">Surface</option>
+                    <option value="confort">Confort</option>
+                    <option value="decoration">Décoration</option>
+                </select>
+            </div>
+
+            <div class="product-list">
+                <div class="product-item" data-category="surface">
+                    <h3>Surface</h3>
+                    <div class="img-surface">
+                        <img src="images/surface-1.jpeg" alt="surface-1" style="width: 400px" ;>
+
+                        <p> Bureau Demboubah </p>
+
+                        <img src="images/surface-2.jpeg" alt="surface-2" style="width: 400px;">
+
+                        <p> Table Xavitina </p>
+                    </div>
+                </div>
+                <div class="product-item" data-category="decoration">
+                    <h3>Décoration</h3>
+                    <div class="img-surface">
+                        <img src="images/deco-1.jpeg" alt="deco-1" style="width: 400px" ;>
+
+                        <p> Pot Marcaaron </p>
+
+                        <img src="images/deco-2.jpeg" alt="deco-2" style="width: 400px;">
+
+                        <p> Miroir Davimartinio </p>
+                    </div>
+
+                </div>
+                <div class="product-item" data-category="confort">
+                    <h3>Confort</h3>
+                    <div class="img-surface">
+                        <img src="images/confort-1.jpeg" alt="confort-1" style="width: 400px" ;>
+
+                        <p> Fauteuil Supra </p>
+
+                        <img src="images/confort-2.jpeg" alt="confort-2" style="width: 400px;">
+
+                        <p> Fauteuil Dhiarry </p>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+
+        <footer>
+            <div>
+                <p id="footer-title">e.kea</p>
+            </div>
+            <div id="footer-contact">
+                <a href="">
+                    <p>Nous Contacter</p>
+                </a>
+            </div>
+        </footer>
+        <script src="produit.js">  </script>
+</body>
+
+</html>
