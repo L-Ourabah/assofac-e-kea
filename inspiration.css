@@ -40,29 +40,129 @@ body {
     background-color: var(--couleur-principale);
 }
 
-header {
+header{
     background: var(--couleur-principale);
     height: 100%;
 }
 
-header,
-section {
+header, section{
     color: var(--couleur-police);
 }
 
-#logo-container {
+#logo-container{
     width: 100px;
 }
 
-#logo-container img {
+#logo-container img{
     width: 100%;
 }
 
-#header-nav {
+#image-burger-menu-open{
+    width: 30%;
+    margin: 0 auto;
+}
+
+#image-burger-menu-open img{
+    width: 100%;
+}
+
+#header-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 20px 3%;
+}
+
+#burger-menu{
+    cursor: pointer;
+}
+
+.barre{
+    display: block;
+    width: 50px;
+    height: 7px;
+    margin: 10px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--couleur-secondaire);
+}
+
+#burger-menu.active .barre:nth-child(2){
+    opacity: 0;
+}
+
+#burger-menu.active .barre:nth-child(1){
+    transform: translateY(14px) rotate(45deg) ;
+}
+
+#burger-menu.active .barre:nth-child(3){
+    transform: translateY(-19px) rotate(-45deg) ;
+}
+
+#burger-menu-nav{
+    position: fixed;
+    left: -105%;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    background-color: var(--couleur-principale);
+}
+
+#burger-menu-nav-flex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#burger-menu-nav-flex ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 1.5em;
+}
+
+#burger-menu-open{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+#burger-menu-nav.active{
+    left: 0;
+
+}
+
+#burger-reseaux-sociaux{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.burger-menu-fixed{
+    position: fixed;
+}
+
+#copyright{
+    width: 100%;
+    height: 15%;
+    background-color: var(--bleu-secondaire);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-shrink{
+    width: 300px;
 }
 
 footer {
