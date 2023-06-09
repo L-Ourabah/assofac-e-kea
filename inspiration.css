@@ -12,6 +12,7 @@
     text-decoration: none;
     color: inherit;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 :root {
@@ -263,105 +264,247 @@ footer p {
     color: var(--couleur-police);
 }
 
-/*********************************************nos produits***************************************/
+/*********************************************Prod-inspi************************************************************/
 
 
 
-.contenaire-prod {
+.contenaire-inspi {
 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 11%;
-    margin: 25px;
-    align-items: center;
-
+    gap:5%;
     
+
+
 }
 
 
 
-.contenaire-prod .produit {
+.contenaire-inspi .produit {
     display: flex;
-   
     flex-direction: column;
+
 }
 
 
-.contenaire-prod .produit .img-prod img {
-    
-    height: 18vh;
+
+
+
+.contenaire-inspi .produit .img-prod img {
+    width: 146px;
+    height: 133px;
     border-radius: 15px;
 
 
 
 }
-.contenaire-prod p {
+
+.contenaire-inspi p {
     text-align: center;
-    padding: 5%;
-    font-size: 1em;
+    padding: 10%;
+    font-size: 0.9em;
 
 }
 
-
-.contenaire-prod:after {
+/*
+.contenaire-inspi:after {
     content: "";
     display: table;
     clear: both;
+}*/
+
+
+@media (min-width:500px) {
+    
+    .contenaire-inspi .produit .img-prod img {
+        width: 187px;
+        height: 112px;
+        
+    
+    
+    
+    }
+}
+
+@media (min-width:600px) {
+    
+    .contenaire-inspi .produit .img-prod img {
+        width: 257px;
+        height: 152px;
+        
+    
+    
+    
+    }
 }
 
 
-@media (min-width:900px) {
-    .contenaire-prod .produit  {
-        width: 30px;
+
+@media (min-width:850px) {
+    
+    .contenaire-inspi .produit .img-prod img {
+        width: 387px;
+        height: 192px;
         
-        
+    
+    
+    
     }
     
 }
-
-/* Create four equal columns that floats next to eachother */
-.vignettes {
-    float: left;
-    width: 11%;
-    margin-left: 5%;
+@media (min-width:1000px) {
+    
+    .contenaire-inspi .produit .img-prod img {
+        width: 415px;
+        height: 230px;
+        
+    
+    
+    
+    }
 }
 
-/* The Modal (background) */
+
+
+/******************************************************modal*****************************/
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
     padding-top: 100px;
     left: 0;
-    top: 15%;
-    width: 90%;
-    height: 90%;
+    top: 0;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.459);
+   background-color: rgba(0, 0, 0, 0.658);
+   
 
 }
 
-/* Modal Content */
+/*******************************************Contenu du modal ******************************/
+
+
+
 .modal-content {
     position: relative;
-
+    height: 500px;
     margin: auto;
-
     width: 90%;
     
-
-
+    
 }
 
 .modal-content img {
     width: 100%;
-    height: 100%;
+   height: 40vh;
 
 }
 
 
-/* boutton fermer */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+     border-radius: 25px;
+}/*
+@media (min-width:750px) {
+
+    .mySlides img {
+    height: 51vh;
+    
+}
+}
+
+@media (min-width:1100px) {
+
+    .mySlides img {
+    height: 60vh;
+    
+}
+}*/
+@media (min-width:850px) {
+    
+    .modal-content img {
+        
+        height: 51vh;
+        
+    
+    
+    
+    }
+    
+ 
+
+   
+  .modal .vignettes {
+    float: left;
+    width: 25%;
+    height: 200px;
+  
+  
+}
+  
+}
+
+
+/************************************** vignettes *******************************************/
+
+
+
+.vignettes {
+    float: left;
+    width: 25%;
+    height: 15%;
+    margin-left: 7%;
+    overflow: hidden;
+    margin-bottom: 3%;
+    border: 1px var(--couleur-secondaire) solid;
+    border-radius: 30px;
+    margin-top: 3%;
+  
+}
+
+
+.vignettes:hover {
+    
+   
+     border: 2px var(--couleur-secondaire) solid;
+   transform: scale(0.8);
+     border-radius: 25%;
+ 
+   
+
+}
+
+img.apercu {
+    width: 100%;
+    opacity: 0.6;
+    height: 100%;
+    transition: 0.3s;
+   
+}
+
+
+
+/******************************************************* modal slide *******************************************/
+
+
+
+
+
+/*********************************************** modal boutton fermer *****************************************************/
+
+
+.modal .close:hover {
+    color: var(--couleur-secondaire);
+   transform: scale(2);
+}
+
+
+
 .modal .close {
     color: white;
     position: absolute;
@@ -378,23 +521,17 @@ footer p {
     cursor: pointer;
 }
 
-/* Hide the slides by default */
-.mySlides {
-    display: none;
-}
-.mySlides img{
-    height: 35vh;
-    border-radius: 25px;
-}
-/* Next & previous buttons*/
-.modal .prev,
-.modal .next {
+
+
+/****************************************modal boutton Next & previous ****************************************************/
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
-    top: 35%;
+    top: 40%;
     width: auto;
     padding: 16px;
-    /*margin-top: -50px;*/
+    margin-top: -50px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -405,20 +542,24 @@ footer p {
 }
 
 /* Position the "next button" to the right */
+
+
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.modal .prev:hover,
-.modal .next:hover {
+/**************************************************** effet boutton de déplacement ***************************************/
+
+.prev:hover,
+.next:hover {
     background-color: var(--couleur-principale);
     color: var(--couleur-secondaire);
 
 }
 
-/* Number text (1/3 etc) */
+/******************************************************************** Number text (1/3 etc) ***************************************/
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -427,55 +568,21 @@ footer p {
     top: 0;
 }
 
-/* Caption text 
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}*/
-.vignettes {
-    height: 45px;
-    overflow: hidden;
-    width: 11%;
-}
 
-.vignettes .img.demo {
-    opacity: 0.6;
-    height: 100%;
-    transition: 0.3s;
-}
+
 
 .active-apercu,
-.demo:hover {
+.apercu:hover {
     opacity: 1;
 }
 
-/*
-img.demo {
-    
-}
-
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
-
-/*
-.produits  img {
-
-    width: 146px;
-    height: 133px;
-    max-width: auto;
-    max-height: auto;
-
-    /*width:100%;
-}*/
-
-/**************************zoom image*****************************************/
 
 
 
-/*********************************************************************************/
+
+
+
+/***************************************************** media query ************************************************/
 
 
 
@@ -496,171 +603,3 @@ img.demo {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.produits {
-    margin-top: 25px;
-    padding: 0 8px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 11%;
-    flex-wrap: wrap;
-
-
-
-}
-
-.produit {
-    width: 40%;
-
-}
-
-.produit img {
-    width: 100%;
-}
-
-.produit:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-
-.vignettes {
-    display: flex;
-    gap: 11%;
-}
-
-.column {
-    float: left;
-    width: 11%;
-    margin-left: 5%;
-}
-
-img.demo {
-    width: 100%;
-    height: 3rem;
-    opacity: 0.6;
-}
-
-img.demo img {
-
-    height: 100%;
-    opacity: 0.6;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.658);
-
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-
-    margin: auto;
-    height: 60vh;
-    width: 90%;
-
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-
-
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
-
-
