@@ -2,7 +2,7 @@
 
 *,
 *::before,
-*::after {
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
+:root{
     --couleur-principale: #0600b7;
     --couleur-secondaire: #ffef00;
     --bleu-secondaire: #030068;
@@ -22,22 +22,16 @@
     --couleur-police: rgb(237, 233, 227);
 }
 
-html {
+html{
     height: 100%;
     width: 100%;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-}
-
 body {
     background-color: var(--couleur-principale);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -165,27 +159,8 @@ header, section{
     width: 300px;
 }
 
-header,
-section {
-    color: var(--couleur-police);
-}
 
-#logo-container {
-    width: 100px;
-}
-
-#logo-container img {
-    width: 100%;
-}
-
-#header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-}
-
-footer {
+footer{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -195,31 +170,69 @@ footer {
     background-color: #02001e;
 }
 
-footer p {
+footer p{
     margin-bottom: .5em;
-}
+} 
 
-#footer-title {
+#footer-title{
     font-size: 2em;
 }
 
+/*                                           */           
 
-.background-head {
-    width: 100vw;
-    height: 350px;
-}
-
-.background-head-img {
-    background-image: url(img/canapé2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/*                CARROUSEL                  */
+/*
+.owl-carousel{
     width: 100%;
-    height: 100%;
-
-
-
+    height: 60vh;
+    overflow: hidden;
 }
+
+.slide{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.slide::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0,0,0,.5);
+}
+
+.slide-1{
+    background: url(images/image-slider1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-2{
+    background-image: url(images/image-services.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-3{
+    background-image: url(images/image-inspiration.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.owl-dots{
+    display: none;
+}*/
+
+/*                                                          */
 
 /*******************************************************titre nos service**************************************/
 
@@ -244,7 +257,7 @@ footer p {
 .option {
     margin: 25px;
     background-color: var(--bleu-secondaire);
-    
+
 
 }
 
@@ -256,7 +269,7 @@ footer p {
 .button-mode {
     display: flex;
     width: 100%;
-    
+
 
 }
 
@@ -319,18 +332,22 @@ footer p {
     background-color: var(--bleu-tertiaire);
 
 }
-.titreh31, .titreh32, .titreh33 {
-    padding:25px;
+
+.titreh31,
+.titreh32,
+.titreh33 {
+    padding: 25px;
 
 }
+
 .fois {
     border: 2px solid var(--couleur-police);
     border-radius: 50%;
     background-color: var(--couleur-principale);
     text-align: center;
-    width: 33%;
+    width: 20%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 3%;
 
 }
 
@@ -341,9 +358,9 @@ footer p {
 }
 
 .paypal {
-display: flex;
-justify-content: center;
-width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
 
 }
@@ -359,26 +376,51 @@ width: 100%;
 
 .picture img {
     width: 100%;
-    
+
+}
+
+@media (min-width:1100px){
+
+#footer{
+    position: relative;
+}
+
+#footer-contact{
+    position: absolute;
+    right: 5%;
+}
+
+
+
 }
 @media (min-width:1100px) {
 
 
 
-    
-    .livraison, .paiement {
+
+    .livraison,
+    .paiement {
 
         flex-direction: row;
     }
+
     .button-mode {
-        
+
         width: 45%;
-    
-    
+
+
+    }
+
+    .text-livraison, .pay {
+        width: 60%;
+        margin-top: 3%;
+        margin-left: 5%;
     }
 
     .picture {
-        margin-left: 25px;
+        width:50%;
+        
+
     }
 }
 
@@ -418,11 +460,11 @@ width: 100%;
 }
 
 .slide-1 {
-    background-image: url(img/image-services.png);
+    background-image: url(images/services-header-stock.png);
 
 }
 
 .slide-2 {
-    background-image: url(img/service-header-cb.jpg);
+    background-image: url(images/services-carte\ bleu.jpg);
 
 }
