@@ -40,44 +40,45 @@ body {
     background-color: var(--couleur-principale);
 }
 
-header{
+header {
     background: var(--couleur-principale);
     height: 100%;
 }
 
-header, section{
+header,
+section {
     color: var(--couleur-police);
 }
 
-#logo-container{
+#logo-container {
     width: 100px;
 }
 
-#logo-container img{
+#logo-container img {
     width: 100%;
 }
 
-#image-burger-menu-open{
+#image-burger-menu-open {
     width: 30%;
     margin: 0 auto;
 }
 
-#image-burger-menu-open img{
+#image-burger-menu-open img {
     width: 100%;
 }
 
-#header-nav{
+#header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 3%;
 }
 
-#burger-menu{
+#burger-menu {
     cursor: pointer;
 }
 
-.barre{
+.barre {
     display: block;
     width: 50px;
     height: 7px;
@@ -87,19 +88,19 @@ header, section{
     background-color: var(--couleur-secondaire);
 }
 
-#burger-menu.active .barre:nth-child(2){
+#burger-menu.active .barre:nth-child(2) {
     opacity: 0;
 }
 
-#burger-menu.active .barre:nth-child(1){
-    transform: translateY(14px) rotate(45deg) ;
+#burger-menu.active .barre:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
 }
 
-#burger-menu.active .barre:nth-child(3){
-    transform: translateY(-19px) rotate(-45deg) ;
+#burger-menu.active .barre:nth-child(3) {
+    transform: translateY(-19px) rotate(-45deg);
 }
 
-#burger-menu-nav{
+#burger-menu-nav {
     position: fixed;
     left: -105%;
     top: 0;
@@ -114,15 +115,15 @@ header, section{
     background-color: var(--couleur-principale);
 }
 
-#burger-menu-nav-flex{
+#burger-menu-nav-flex {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
-#burger-menu-nav-flex ul{
+#burger-menu-nav-flex ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,28 +132,28 @@ header, section{
     gap: 1.5em;
 }
 
-#burger-menu-open{
+#burger-menu-open {
     position: absolute;
     top: 3%;
     right: 3%;
 }
 
-#burger-menu-nav.active{
+#burger-menu-nav.active {
     left: 0;
 
 }
 
-#burger-reseaux-sociaux{
+#burger-reseaux-sociaux {
     display: flex;
     justify-content: center;
     gap: 10%;
 }
 
-.burger-menu-fixed{
+.burger-menu-fixed {
     position: fixed;
 }
 
-#copyright{
+#copyright {
     width: 100%;
     height: 15%;
     background-color: var(--bleu-secondaire);
@@ -161,9 +162,10 @@ header, section{
     align-items: center;
 }
 
-#logo-shrink{
+#logo-shrink {
     width: 300px;
 }
+
 
 footer {
     width: 100%;
@@ -183,33 +185,24 @@ footer p {
     font-size: 2em;
 }
 
-/**************************************************************************************/
+/*                                           */
 
-
-
-
-/****************************************************************carousel*************************************/
+/*                CARROUSEL                  */
 
 .owl-carousel {
     width: 100%;
     height: 60vh;
     overflow: hidden;
-    /*contenu depassant sera caché*/
-
-
 }
 
 .slide {
     width: 100%;
     height: 60vh;
     position: relative;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-
+    background-position: center;
 }
-
 
 .slide::before {
     content: "";
@@ -217,34 +210,36 @@ footer p {
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 450px;*/
-    width: 100%;
     height: 60vh;
-
-
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .slide-1 {
-    background-image: url(img/canapé.png);
-
+    background: url(images/slider1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .slide-2 {
-    background-image: url(img/surface-1.jpeg);
-
+    background-image: url(images/slider2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .slide-3 {
-    background-image: url(img/header_produit.jpeg);
-
+    background-image: url(images/slider3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
+.owl-dots {
+    display: none;
+}
 
-
-
-
-
-
+/*                                                          */
 /*****************************************************************fin caroussel*************************************************************************/
 
 
@@ -270,111 +265,223 @@ footer p {
 
 /*********************************************nos produits***************************************/
 
-.produits {
+
+
+.contenaire-prod {
+
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 10%;
-    width: 100%;
     gap: 11%;
+    margin: 25px;
+    align-items: center;
+
+    
 }
 
-.produit1,
-.produit2,
-.produit3,
-.produit4,
-.produit5,
-.produit6 {
+
+
+.contenaire-prod .produit {
     display: flex;
+   
     flex-direction: column;
 }
 
-.produits img {
+
+.contenaire-prod .produit .img-prod img {
+    
+    height: 18vh;
+    border-radius: 15px;
+
+
+
+}
+.contenaire-prod p {
+    text-align: center;
+    padding: 5%;
+    font-size: 1em;
+
+}
+
+
+.contenaire-prod:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (min-width:900px) {
+    .contenaire-prod .produit  {
+        width: 30px;
+        
+        
+    }
+    
+}
+
+/* Create four equal columns that floats next to eachother */
+.vignettes {
+    float: left;
+    width: 11%;
+    margin-left: 5%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 15%;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.459);
+
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+
+    margin: auto;
+
+    width: 90%;
+    
+
+
+}
+
+.modal-content img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* boutton fermer */
+.modal .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: var(--couleur-secondaire);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    height: 35vh;
+    border-radius: 25px;
+}
+/* Next & previous buttons*/
+.modal .prev,
+.modal .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    /*margin-top: -50px;*/
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.modal .prev:hover,
+.modal .next:hover {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text 
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}*/
+.vignettes {
+    height: 45px;
+    overflow: hidden;
+    width: 11%;
+}
+
+.vignettes .img.demo {
+    opacity: 0.6;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.active-apercu,
+.demo:hover {
+    opacity: 1;
+}
+
+/*
+img.demo {
+    
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+/*
+.produits  img {
 
     width: 146px;
     height: 133px;
     max-width: auto;
     max-height: auto;
 
-    /*width:100%;*/
-}
+    /*width:100%;
+}*/
 
 /**************************zoom image*****************************************/
 
-/*.produit-survole{
-    transform: scale(2) translateX(50%) translateY(50%);
-    
-   
-    
-}*/
 
-/*
-.produits img:hover {
-    -ms-transform: scale(1.5);
-    /* IE 9 */
-/*-webkit-transform: scale(1.5);*/
-/* Safari 3-8 */
-/*1transform: scale(1.5) translateX(50%) translateY(50%);
-    
-
-    border: 1px solid white;
-    border-radius: 25px;
-
-
-   
-    
-
-}*/
 
 /*********************************************************************************/
 
-.produits p {
-    text-align: center;
-    padding: 4% 0 4% 0;
-
-    margin: 4% 0 4% 0;
-    color: var(--couleur-police);
-}
 
 
+@media (min-width: 1100px) {
 
-@media (min-width: 500px) {
 
-    .produits img {
-
-        width: 190px;
-        height: 140px;
-
-    }
-}
-@media (min-width: 650px) {
-
-    .produits img {
-
-        width: 250px;
-        height: 160px;
-
-    }
-}
-
-@media (min-width: 900px) {
-
-    .produits img {
-
-        width: 273px;
-        height: 165px;
-
-    }
-}
-
-@media (min-width: 1045px) {
-
-    .produits img {
-
-        width: 373px;
-        height: 187px;
-
-    }
 
 
     #footer {
@@ -389,3 +496,171 @@ footer p {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.produits {
+    margin-top: 25px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 11%;
+    flex-wrap: wrap;
+
+
+
+}
+
+.produit {
+    width: 40%;
+
+}
+
+.produit img {
+    width: 100%;
+}
+
+.produit:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+
+.vignettes {
+    display: flex;
+    gap: 11%;
+}
+
+.column {
+    float: left;
+    width: 11%;
+    margin-left: 5%;
+}
+
+img.demo {
+    width: 100%;
+    height: 3rem;
+    opacity: 0.6;
+}
+
+img.demo img {
+
+    height: 100%;
+    opacity: 0.6;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.658);
+
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+
+    margin: auto;
+    height: 60vh;
+    width: 90%;
+
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+
+
