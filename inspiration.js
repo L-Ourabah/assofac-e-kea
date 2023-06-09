@@ -26,7 +26,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("apercu");
   
   // Gérer les dépassements d'indice
   if (n > slides.length) {
