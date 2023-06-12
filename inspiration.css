@@ -465,6 +465,7 @@ footer p {
     border: 1px var(--couleur-secondaire) solid;
     border-radius: 30px;
     margin-top: 3%;
+    cursor: pointer;
   
 }
 
