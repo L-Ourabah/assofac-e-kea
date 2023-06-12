@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 
+=======
+function demarrage() {
+  let chargement = setTimeout(affichageDeLaPage, 2000);
+}
+
+function affichageDeLaPage() {
+  document.getElementById("loader-fullscreen").style.display = "none";
+  document.getElementById("conteneur-chargement").style.display = "block";
+}
+>>>>>>> Aaron
 
 
 const burgerMenu = document.querySelector("#burger-menu");
