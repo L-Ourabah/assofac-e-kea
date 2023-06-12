@@ -295,6 +295,7 @@ footer p {
     width: 146px;
     height: 133px;
     border-radius: 15px;
+    cursor: pointer;
 
 
 
@@ -484,7 +485,6 @@ img.apercu {
     opacity: 0.6;
     height: 100%;
     transition: 0.3s;
-   
 }
 
 
@@ -528,7 +528,8 @@ img.apercu {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 0;
+    transform: translateY(-50%);
     width: auto;
     padding: 16px;
     margin-top: -50px;
