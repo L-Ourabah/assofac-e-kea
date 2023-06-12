@@ -257,7 +257,7 @@ footer p{
 .option {
     margin-left: 25px;
     margin-right: 25px;
-    background-color: var(--bleu-secondaire);
+    background-color: var(--bleu-tertiaire);
     margin-bottom: 55px;
 
 
@@ -477,6 +477,6 @@ footer p{
 }
 
 .slide-2 {
-    background-image: url(images/services-carte\ bleu.jpg);
+    background-image: url(images/header-paiment-cb.jpg);
 
 }
