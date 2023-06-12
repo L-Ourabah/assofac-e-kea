@@ -48,5 +48,5 @@ function showSlides(n) {
   
   // Afficher la diapositive en cours et marquer la vignette correspondante comme active
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active-apercu";
+  dots[slideIndex-1].className += "active-apercu";
 }

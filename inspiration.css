@@ -216,14 +216,14 @@ footer p {
 }
 
 .slide-1 {
-    background: url(images/slider1.jpeg);
+    background: url(images/slider1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .slide-2 {
-    background-image: url(images/slider2.png);
+    background-image: url(images/slider2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -409,7 +409,7 @@ footer p {
 }
 
 .mySlides img {
-     border-radius: 25px;
+     border-radius: 35px;
 }/*
 @media (min-width:750px) {
 
@@ -463,7 +463,7 @@ footer p {
     overflow: hidden;
     margin-bottom: 3%;
     border: 1px var(--couleur-secondaire) solid;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: 3%;
     cursor: pointer;
   
@@ -474,10 +474,13 @@ footer p {
     
    
      border: 2px var(--couleur-secondaire) solid;
-     border-radius: 25%;
  
    
 
+}
+
+.vignettes-border-color{
+    border: 3px solid blue
 }
 
 img.apercu {
