@@ -622,4 +622,5 @@ img.apercu {
     transform: scale(1.2) rotate(360deg);
     border: 5px var(--couleur-secondaire) solid;
     border-radius: 50%;
+    
 }
