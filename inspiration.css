@@ -473,7 +473,6 @@ footer p {
     
    
      border: 2px var(--couleur-secondaire) solid;
-   transform: scale(0.8);
      border-radius: 25%;
  
    
@@ -528,7 +527,7 @@ img.apercu {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 50%;
     transform: translateY(-50%);
     width: auto;
     padding: 16px;
