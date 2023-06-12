@@ -23,218 +23,227 @@
     <!-- lien css-->
 
     <link type="text/css" rel="stylesheet" href="inspiration.css" />
-    
+
 
     <title>inspiration</title>
 </head>.
 
 <body>
-    <header>
-        <div id="header-nav">
-            <div id="burger-menu">
-                <div class="barre"></div>
-                <div class="barre"></div>
-                <div class="barre"></div>
-            </div>
-
-            <a href="index.html">
-                <div id="logo-container">
-                    <img id="logo-shrink" src="images/logo-ekea.PNG" alt="Logo E-kea">
-                </div>
-            </a>
-            <div>
-                <a href="panier.html"><img src="images/panier.svg" alt="panier"></a>
-
-            </div>
-            <div id="burger-menu-nav">
-                <div id="burger-menu-nav-flex">
-                    <div id="image-burger-menu-open">
-                        <img src="images/logo-ekea.png"  alt="Logo E-kea">
-                    </div>
-                   
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="#">Inspiration</a></li>
-                        <li><a href="#">Produits</a></li>
-                        <li><a href="services.html">Nos Services</a></li>
-                        <li><a href="#">Nous Contacter</a></li>
-                    </ul>
-                    <div id="burger-reseaux-sociaux">
-                        <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-                        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-                        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-                    </div>
-                    <div id="copyright">
-                        <p>Copyright - Jade & Stella</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section>
-
-            <!--carroussel-->
-
-            <div class="owl-carousel owl-theme">
-                <div class="slide slide-1">
-                    
-
-                </div>
-                <div class="slide slide-2">
-                    
-                </div>
-                <div class="slide slide-3">
-                    
-                </div>
-            </div>
-
-
-        </section>
-
-        <section>
-            <div class="titre-inspiration">
-                <h1>Nos inspirations</h1>
-            </div>
-        </section>
-
-
-        <section>
-            <div class="contenaire-inspi">
-                <div class="produit ">
-                    <div class="img-prod">
-                        <img src="images/inspi-1-chambre zen.jpeg" onclick="openModal();currentSlide(1)" ><!--class="hover-shadow"-->
-                    </div>
-                    <div>
-                        <p>Chambre Zen</p>
-                    </div>
+    <img id="imageElement" src="images/Iznogoud-Moi-calife.jpg" alt="salon detente" style="display: none;">
+    <div id="pageContent">
+        <header>
+            <div id="header-nav">
+                <div id="burger-menu">
+                    <div class="barre"></div>
+                    <div class="barre"></div>
+                    <div class="barre"></div>
                 </div>
 
-                <div class="produit ">
-                    <div class="img-prod">
-                        <img src="images/inspi-2-cuisine moderne.jpg" onclick="openModal();currentSlide(2)" >
+                <a href="index.html">
+                    <div id="logo-container">
+                        <img id="logo-shrink" src="images/logo-ekea.PNG" alt="Logo E-kea">
                     </div>
-                    <div>
-                        <p>Cuisine Moderne</p>
-                    </div>
-                </div>
+                </a>
+                <div>
+                    <a href="panier.html"><img src="images/panier.svg" alt="panier"></a>
 
-                <div class="produit  ">
-                    <div class="img-prod">
-                        <img src="images/inspi-3-salon elegance.jpeg" onclick="openModal();currentSlide(3)" >
-                    </div>
-                    <div>
-                        <p>Salon Elegance</p>
-                    </div>
                 </div>
-
-                <div class="produit  ">
-                    <div class="img-prod">
-                        <img src="images/inspi-4-salon detente.jpeg" onclick="openModal();currentSlide(4)" >
-                    </div>
-                    <div>
-                        <p>Salon Detente</p>
-                    </div>
-                </div>
-
-                <div class="produit ">
-                    <div class="img-prod">
-                        <img src="images/inspi-5-salon boheme.jpeg" onclick="openModal();currentSlide(5)" >
-                    </div>
-                    <div>
-                        <p>Salon Boheme</p>
-                    </div>
-                </div>
-
-                <div class="produit ">
-                    <div class="img-prod">
-                        <img src="images/inspi-6-chambre urbaine.jpeg" onclick="openModal();currentSlide(6)" >
-                    </div>
-                    <div>
-                        <p>Chambre Urbain</p>
-                    </div>
-                </div>
-            </div>
-            <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                    <div>
-                        <div class="mySlides">
-                            <div class="numbertext">1 / 6</div>
-                            <img src="images/inspi-1-chambre zen.jpeg" alt="zen"><!--style="width:100%"-->
+                <div id="burger-menu-nav">
+                    <div id="burger-menu-nav-flex">
+                        <div id="image-burger-menu-open">
+                            <img src="images/logo-ekea.png" alt="Logo E-kea">
                         </div>
 
-                        <div class="mySlides">
-                            <div class="numbertext">2 / 6</div>
-                            <img src="images/inspi-2-cuisine moderne.jpg"  alt="moderne">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="#">Inspiration</a></li>
+                            <li><a href="#">Produits</a></li>
+                            <li><a href="services.html">Nos Services</a></li>
+                            <li><a href="#">Nous Contacter</a></li>
+                        </ul>
+                        <div id="burger-reseaux-sociaux">
+                            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
                         </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">3 / 6</div>
-                            <img src="images/inspi-3-salon elegance.jpeg"  alt="elegance">
+                        <div id="copyright">
+                            <p>Copyright - Jade & Stella</p>
                         </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">4 / 6</div>
-                            <img src="images/inspi-4-salon detente.jpeg"  alt="detente"> 
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">5 / 6</div>
-                            <img src="images/inspi-5-salon boheme.jpeg"  alt="boheme">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">6 / 6</div>
-                            <img src="images/inspi-6-chambre urbaine.jpeg"  alt="urbaine">
-                        </div>
-
-                        <!-- Next/previous controles -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
                     </div>
-                    <!--vignettes image controls-->
-
-                    
-                    <div class="vignettes">
-                        <img class="apercu" src="images/inspi-1-chambre zen.jpeg" onclick="currentSlide(1)" alt="zen">
-                    </div>
-
-                    <div class="vignettes">
-                        <img class="apercu" src="images/inspi-2-cuisine moderne.jpg" onclick="currentSlide(2)" alt="moderne">
-                    </div>
-
-                    <div class="vignettes">
-                        <img class="apercu" src="images/inspi-3-salon elegance.jpeg" onclick="currentSlide(3)" alt="elegance">
-                    </div>
-
-                    <div class="vignettes">
-                        <img class="apercu" src="images/inspi-4-salon detente.jpeg" onclick="currentSlide(4)" alt="detente">
-                    </div>
-
-                    <div class="vignettes">
-                        <img class="apercu" src="images/inspi-5-salon boheme.jpeg" onclick="currentSlide(5)" alt="boheme">
-                    </div>
-
-                    <div class="vignettes">
-                        <img class="apercu" src="images/inspi-6-chambre urbaine.jpeg" onclick="currentSlide(6)" alt="urbaine">
-                    </div>
-
                 </div>
             </div>
-            </div>
+        </header>
+        <main>
+            <section>
+
+                <!--carroussel-->
+
+                <div class="owl-carousel owl-theme">
+                    <div class="slide slide-1">
 
 
-        </section>
+                    </div>
+                    <div class="slide slide-2">
+
+                    </div>
+                    <div class="slide slide-3">
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section>
+                <div class="titre-inspiration">
+                    <h1>Nos inspirations</h1>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="contenaire-inspi">
+                    <div class="produit ">
+                        <div class="img-prod">
+                            <img src="images/inspi-1-chambre zen.jpeg"
+                                onclick="openModal();currentSlide(1)"><!--class="hover-shadow"-->
+                        </div>
+                        <div>
+                            <p>Chambre Zen</p>
+                        </div>
+                    </div>
+
+                    <div class="produit ">
+                        <div class="img-prod">
+                            <img src="images/inspi-2-cuisine moderne.jpg" onclick="openModal();currentSlide(2)">
+                        </div>
+                        <div>
+                            <p>Cuisine Moderne</p>
+                        </div>
+                    </div>
+
+                    <div class="produit  ">
+                        <div class="img-prod">
+                            <img src="images/inspi-3-salon elegance.jpeg" onclick="openModal();currentSlide(3)">
+                        </div>
+                        <div>
+                            <p>Salon Elegance</p>
+                        </div>
+                    </div>
+
+                    <div class="produit  ">
+                        <div class="img-prod">
+                            <img src="images/inspi-4-salon detente.jpeg" onclick="openModal();currentSlide(4)">
+                        </div>
+                        <div>
+                            <p>Salon Detente</p>
+                        </div>
+                    </div>
+
+                    <div class="produit ">
+                        <div class="img-prod">
+                            <img src="images/inspi-5-salon boheme.jpeg" onclick="openModal();currentSlide(5)">
+                        </div>
+                        <div>
+                            <p>Salon Boheme</p>
+                        </div>
+                    </div>
+
+                    <div class="produit ">
+                        <div class="img-prod">
+                            <img src="images/inspi-6-chambre urbaine.jpeg" onclick="openModal();currentSlide(6)">
+                        </div>
+                        <div>
+                            <p>Chambre Urbain</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div>
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="images/inspi-1-chambre zen.jpeg" alt="zen"><!--style="width:100%"-->
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="images/inspi-2-cuisine moderne.jpg" alt="moderne">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="images/inspi-3-salon elegance.jpeg" alt="elegance">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="images/inspi-4-salon detente.jpeg" alt="detente">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="images/inspi-5-salon boheme.jpeg" alt="boheme">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="images/inspi-6-chambre urbaine.jpeg" alt="urbaine">
+                            </div>
+
+                            <!-- Next/previous controles -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                        </div>
+                        <!--vignettes image controls-->
+
+
+                        <div class="vignettes">
+                            <img class="apercu" src="images/inspi-1-chambre zen.jpeg" onclick="currentSlide(1)"
+                                alt="zen">
+                        </div>
+
+                        <div class="vignettes">
+                            <img class="apercu" src="images/inspi-2-cuisine moderne.jpg" onclick="currentSlide(2)"
+                                alt="moderne">
+                        </div>
+
+                        <div class="vignettes">
+                            <img class="apercu" src="images/inspi-3-salon elegance.jpeg" onclick="currentSlide(3)"
+                                alt="elegance">
+                        </div>
+
+                        <div class="vignettes">
+                            <img class="apercu" src="images/inspi-4-salon detente.jpeg" onclick="currentSlide(4)"
+                                alt="detente">
+                        </div>
+
+                        <div class="vignettes">
+                            <img class="apercu" src="images/inspi-5-salon boheme.jpeg" onclick="currentSlide(5)"
+                                alt="boheme">
+                        </div>
+
+                        <div class="vignettes">
+                            <img class="apercu" src="images/inspi-6-chambre urbaine.jpeg" onclick="currentSlide(6)"
+                                alt="urbaine">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    
 
 
 
 
 
-    </main>
+
 
 
 
@@ -247,8 +256,8 @@
         </div>
     </footer>
     </div>
-
-
+    </div>
+</div>
 </body>
 
 
@@ -268,6 +277,7 @@
 <script src="app.js"></script>
 <script src="script.js"></script>
 <script src="inspiration.js"></script>
+<script src="sega.js"></script>
 
 
 
