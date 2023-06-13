@@ -1,4 +1,4 @@
-
+/* Loader */
 function demarrage() {
   let chargement = setTimeout(affichageDeLaPage, 2000);
 }
@@ -8,7 +8,7 @@ function affichageDeLaPage() {
   document.getElementById("conteneur-chargement").style.display = "block";
 }
 
-
+/* Menu burger */
 const burgerMenu = document.querySelector("#burger-menu");
 const burgerMenuNav = document.querySelector("#burger-menu-nav");
 
