@@ -607,3 +607,20 @@ img.apercu {
 
 
 }
+
+#imageElement {
+    margin: 100px auto;
+
+}
+#imageElement {
+    width: 500px;
+
+    height: 500px;
+    
+}
+#imageElement:hover{
+    transform: scale(1.2) rotate(360deg);
+    border: 5px var(--couleur-secondaire) solid;
+    border-radius: 50%;
+    
+}
