@@ -356,7 +356,7 @@ footer p {
 }
 
 .pay {
-    width:65%;
+
 
     padding-left: 10px;
     padding-right: 10px;
@@ -431,21 +431,13 @@ footer p {
 @media (min-width:1100px) {
 
 
-.option{
-    margin-left: 0;
-    margin-right: 0;
-  
-    margin-bottom: 0;
+    .option {
+        margin-left: 0;
+        margin-right: 0;
+
+        margin-bottom: 0;
 
 
-}
-
-
-
-    .livraison,
-    .paiement {
-
-        flex-direction: row;
     }
 
     .button-mode {
@@ -455,13 +447,32 @@ footer p {
 
     }
 
-    .text-livraison,
-    .pay {
+
+    .livraison,
+    .paiement {
+
+        flex-direction: row;
+    }
+
+
+
+    .text-livraison {
         width: 60%;
         margin-top: 5%;
-        
+
         margin-left: 5%;
     }
+
+
+
+    .pay {
+        padding-top: 2%;
+        padding-left: 1%;
+        margin-left: 0%;
+        width: 76%;
+        margin-top: 5%;
+    }
+
 
     .picture img {
 
@@ -471,9 +482,8 @@ footer p {
     }
 
     .picture {
-        margin-left: 20%;
+        padding-left: 20%;
         padding-top: 0;
-
         padding-bottom: 0;
     }
 
@@ -491,33 +501,42 @@ footer p {
     }
 
     .titreh31,
-    .titreh32,
+    .titreh32 {
+        width: 87%;
+
+    }
+
+
     .titreh33 {
-        margin-right: 1%;
-
+        width: 51%;
     }
-
-    .pay {
-        padding-top: 2%;
-        padding-left: 1%;
-    }
-
     .carte {
-        gap: 3%;
+        gap: 5%;
         padding-left: 12%;
-       
+        padding-right: 6%;
+
 
     }
 
+    .paypal {
+        display: flex;
+        justify-content: center;
+        padding-left: 5%;
+        display: flex;
+        margin: 0 auto;
+    }
 
+   
 
-  
+    .fois4 {
+        margin: 0 auto;
+    }
 
     .fois {
         padding-top: 15%;
 
-        
-        display:flex;
+
+        display: flex;
         align-items: center;
 
         width: 70%;
@@ -525,11 +544,8 @@ footer p {
         margin: 0 auto;
         padding: 3%;
     }
-    .paypal  {
-        display:flex;
-        margin:0 auto;
-    }
 
+    
 }
 
 
@@ -575,4 +591,23 @@ footer p {
 .slide-2 {
     background-image: url(images/header-paiment-cb.jpg);
 
+}
+
+
+
+
+#background-video {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: chroma(0 255 0 0.5);
+    /* Inversez les couleurs et convertissez la vidéo en noir et blanc */
+
+    background-color: transparent;
+    filter: grayscale(100%);
 }
