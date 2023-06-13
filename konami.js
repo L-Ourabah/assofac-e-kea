@@ -6,6 +6,9 @@ var changePromotionColor = document.getElementById("promotion");
 var changeDivColor = document.getElementById("section-bienvenue");
 var changeDiv2Color = document.getElementById("section-inspirations");
 var changeDiv3Color = document.getElementById("section-services");
+var changeBurgerColor = document.getElementById("burger-menu-nav");
+var changeCopyrightColor = document.getElementById("copyright");
+
 document.addEventListener('keydown', function(event) {
   var key = event.key;
 
@@ -21,6 +24,8 @@ document.addEventListener('keydown', function(event) {
       changeDivColor.style.backgroundColor = '#763249';
       changeDiv2Color.style.backgroundColor = '#876523';
       changeDiv3Color.style.backgroundColor = '#fd9080';
+      changeBurgerColor.style.backgroundColor = '#88292f';
+      changeCopyrightColor.style.backgroundColor = '#763249';
       // Réinitialiser la séquence après avoir activé l'easter egg (facultatif)
       currentCodeSequence = [];
     }
