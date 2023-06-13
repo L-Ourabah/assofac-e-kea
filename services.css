@@ -415,11 +415,11 @@ footer p {
 
 @media (min-width:1100px) {
 
-    #footer {
+    #footer{
         position: relative;
     }
 
-    #footer-contact {
+    #footer-contact{
         position: absolute;
         right: 5%;
     }
