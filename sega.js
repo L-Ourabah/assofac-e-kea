@@ -20,7 +20,7 @@ var imageElement = document.getElementById("imageElement");
 var pageContent = document.getElementById("pageContent");
 
 // Fonction de gestion de l'événement de touche
-function konamiCodeHandler(event) {
+function konamiCodeHandler(event) { // si 1er touche appuyer correspond a la touche de l'index zero en passe a la suivante
     if (event.key === konamiCode[konamiIndex]) {
         konamiIndex++;
 
