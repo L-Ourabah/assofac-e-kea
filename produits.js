@@ -25,6 +25,10 @@ filterSelect.addEventListener('change', (event) => {
   selectedOption.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
+/***********************************************zoom produit modal  */
+
+
+
 
 const zoomContenaire = document.querySelector('.zoom-produit');
 const zoomBox = zoomContenaire.querySelectorAll('.zoom');

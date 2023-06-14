@@ -26,7 +26,7 @@ function konamiCodeHandler(event) {
 
         if (konamiIndex === konamiCode.length) {
             // Action à effectuer lorsque le code est entré correctement
-            // Par exemple, afficher une image
+            //  afficher une image
             displayImage();
 
 
