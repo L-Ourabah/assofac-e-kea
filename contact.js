@@ -31,9 +31,5 @@ function validateForm() {
     isValid = false;
   }
   
-  if (isValid) {
-    alert("Félicitations !! Votre message a bien été envoyé.");
-  }
-  
   return isValid;
 }
